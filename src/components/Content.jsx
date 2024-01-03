@@ -4,7 +4,7 @@ import data from '../data/data'
 
 const Content = () => {
   return (
-    <div className='flxed w-full md:w-3/5 overflow-auto'>
+    <div className='relative md:left-[20%] md:top-20 w-full md:w-3/5 overflow-auto'>
       {data.map((post) => (
         <BlogComponent
          key={post.id}

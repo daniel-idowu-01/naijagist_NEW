@@ -11,7 +11,7 @@ const Nav = () => {
     const { login, setLogin } = useContext(LoginContext)
     const { sidebar, setSidebar} = useContext(SidebarContext)
 
-    const nav = 'flex items-center justify-between px-5 py-3 shadow-md'
+    const nav = 'bg-white md:fixed md:left-[20%] flex items-center justify-between md:gap-7 px-5 py-3 z-50 shadow-md'
     const search_input = 'rounded-full p-3 pl-6 outline-none w-40 md:w-500'
     const search_input_container = 'flex border rounded-full relative items-center px-3'
     const nav_btns = 'bg-bice-blue px-5 py-2 text-white rounded-md'

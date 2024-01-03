@@ -15,7 +15,7 @@ const LeftBar = () => {
 
   // sidebar context
   const { sidebar } = useContext(SidebarContext)
-  const leftComponentStyle = `${sidebar ? 'w-11/12' : 'w-0'} bg-white flex flex-col gap-10 md:w-1/5 pt-5 overflow-auto border-2 transition-all`
+  const leftComponentStyle = `${sidebar ? 'w-11/12' : 'w-0'} md:fixed bg-white flex flex-col gap-10 md:w-1/5 py-5 md:py-10 overflow-auto border-2 transition-all`
   const component_style = 'flex flex-col items-start pl-5 gap-5'
   const links_style = 'flex gap-2 items-center text-md cursor-pointer hover:underline'
 
