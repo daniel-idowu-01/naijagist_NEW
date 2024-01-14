@@ -1,13 +1,12 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import LeftBar from './components/LeftBar';
-import RightBar from './components/RightBar';
-import Content from './components/Content';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import { LoginProvider } from './data/context/LoginContext';
 import { SidebarProvider } from './data/context/SidebarContext';
+import Profile from './pages/Profile';
+import HomePage from './pages/HomePage';
 
 function App() {
 
@@ -28,15 +27,12 @@ function App() {
       <SidebarProvider>
         <LoginProvider>
           <Nav />
-          <section className='flex'>
-            <LeftBar />
-            <Content />
-            <RightBar />
             <Routes>
+              <Route path='/' element={ <HomePage /> } />
               <Route path='/login' element={ <Login /> } />
               <Route path='/sign-up' element={ <SignUp /> } />
-            </Routes>           
-          </section>
+              <Route path='/profile' element={ <Profile /> } />
+            </Routes>
         </LoginProvider>
       </SidebarProvider>
 
