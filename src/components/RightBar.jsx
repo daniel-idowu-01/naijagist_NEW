@@ -4,7 +4,7 @@ import { BsArrowUpRightCircle } from 'react-icons/bs'
 
 const RightBar = () => {
 
-  const component_style = 'md:fixed left-[80%] z-20 flex flex-col items-start pl-5 py-5 md:py-10 gap-5'
+  const component_style = 'md:fixed left-[80%] z-20 flex flex-col items-start pl-5 py-5 md:py-20 gap-5'
   const links_style = 'flex gap-2 items-center text-md cursor-pointer hover:underline'
 
   return (

@@ -1,12 +1,12 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
 import { LoginProvider } from './data/context/LoginContext';
 import { SidebarProvider } from './data/context/SidebarContext';
+import Login from './pages/Login';
 import Profile from './pages/Profile';
 import HomePage from './pages/HomePage';
+import SignUp from './pages/SignUp';
 
 function App() {
 
