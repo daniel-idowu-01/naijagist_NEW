@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import HomePage from './pages/HomePage';
 import SignUp from './pages/SignUp';
 import { FaArrowUp } from 'react-icons/fa'
+import Layout from './layout/Layout';
 
 function App() {
 
@@ -27,12 +28,13 @@ function App() {
     <div className="m-0 p-0 box-border montserrat">
       <SidebarProvider>
         <LoginProvider>
-          <Nav />
-            <Routes>
+          <Routes>
+            <Route element={<Layout /> }>
               <Route path='/' element={ <HomePage /> } />
+              <Route path='/profile' element={ <Profile /> } />
+            </Route>
               <Route path='/login' element={ <Login /> } />
               <Route path='/sign-up' element={ <SignUp /> } />
-              <Route path='/profile' element={ <Profile /> } />
             </Routes>
         </LoginProvider>
       </SidebarProvider>
