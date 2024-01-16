@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import Logo from '../data/images/new-logo.png'
@@ -8,7 +8,7 @@ import SidebarContext from '../data/context/SidebarContext'
 
 const Nav = () => {
 
-    const { login, setLogin } = useContext(LoginContext)
+    const navigate = useNavigate()
     const { sidebar, setSidebar} = useContext(SidebarContext)
 
     const nav = 'bg-white md:fixed md:left-[20%] flex items-center justify-between md:gap-7 px-5 py-3 z-50 shadow-md'
@@ -44,7 +44,7 @@ const Nav = () => {
         <div className='flex items-center gap-5'>
             <Link
              to='/login' 
-             onClick={() => setLogin(!login)}>
+             onClick={() => navigate('/login')}>
                 <button className={nav_btns}>Log In</button>
             </Link>
         </div>

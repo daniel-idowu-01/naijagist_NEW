@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import HomePage from './pages/HomePage';
 import SignUp from './pages/SignUp';
+import { FaArrowUp } from 'react-icons/fa'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     )
   }
 
-  const scrollToTopStyle = 'bg-white border outline-none fixed bottom-10 right-10 shadow-md rounded-full p-4'
+  const scrollToTopStyle = 'bg-white border outline-none fixed bottom-10 right-10 rounded-full p-4 border  border-gray-600 text-gray-600'
 
   return (
     <div className="m-0 p-0 box-border montserrat">
@@ -37,8 +38,10 @@ function App() {
       </SidebarProvider>
 
        <button
-       onClick={scrollToTop}
-       className={scrollToTopStyle}>Up</button>
+        onClick={scrollToTop}
+        className={scrollToTopStyle}>
+          <FaArrowUp />
+      </button>
         
     </div>
   );
