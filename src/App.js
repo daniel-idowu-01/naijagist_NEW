@@ -33,8 +33,8 @@ function App() {
               <Route path='/' element={ <HomePage /> } />
               <Route path='/profile' element={ <Profile /> } />
             </Route>
-              <Route path='/login' element={ <Login /> } />
-              <Route path='/sign-up' element={ <SignUp /> } />
+            <Route path='/login' element={ <Login /> } />
+            <Route path='/sign-up' element={ <SignUp /> } />
             </Routes>
         </LoginProvider>
       </SidebarProvider>

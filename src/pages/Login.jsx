@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const Login = () => {
 
-  const input_style = 'block border rounded-full px-4 py-2 w-full bg-transparent outline-none'
+  const input_style = 'block border rounded-md px-4 py-2 w-full bg-transparent outline-none'
   const login_container = 'bg-white rounded-md md:w-[30%] flex justify-center shadow-md border p-7 transition-all'
 
   return (
-    <section className='flex justify-center relative top-20 md:top-40'>
+    <section className='flex justify-center relative top-20 md:top-40 p-5'>
       <div
       className={login_container}>
         <section className='flex flex-col gap-5'>
@@ -26,7 +26,7 @@ const Login = () => {
               id="password" placeholder='Password'
             />
             <button
-              className='bg-bice-blue rounded-full px-4 py-2 text-white w-full'
+              className='bg-bice-blue rounded-md px-4 py-2 text-white w-full'
             >
                 Log In
             </button>
