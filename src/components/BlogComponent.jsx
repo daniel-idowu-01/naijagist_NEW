@@ -7,7 +7,7 @@ import { TbShare3 } from 'react-icons/tb'
 
 const BlogComponent = ({name, profile_image, post_text, post_image}) => {
 
-  const icons_style = 'border cursor-pointer p-3 px-5'
+  const icons_style = 'border cursor-pointer p-3 md:px-5'
 
   return (
     <div className='relative border p-3'>
@@ -21,7 +21,7 @@ const BlogComponent = ({name, profile_image, post_text, post_image}) => {
       </article>
 
       {/* Post Content */}
-      <p className='py-3 block border'>{ post_text }</p>
+      <p className='px-1 py-3 block border'>{ post_text }</p>
       
       {/* Post Image */}
       <img 

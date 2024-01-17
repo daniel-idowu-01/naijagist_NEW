@@ -10,9 +10,9 @@ const Nav = () => {
     const { sidebar, setSidebar} = useContext(SidebarContext)
 
     const nav = 'bg-white md:fixed md:left-[20%] flex items-center justify-between md:gap-7 px-5 py-3 z-50 shadow-md'
-    const search_input = 'rounded-full p-3 pl-6 outline-none w-40 md:w-500'
+    const search_input = 'rounded-full p-3 pl-6 outline-none w-32 md:w-500'
     const search_input_container = 'flex border rounded-full relative items-center px-3'
-    const nav_btns = 'bg-bice-blue px-5 py-2 text-white rounded-md'
+    const nav_btns = 'bg-bice-blue px-5 py-2 text-white rounded-md text-sm md:text-base'
 
   return (
     <nav className={nav}>
@@ -22,7 +22,7 @@ const Nav = () => {
             <Link
              to='/'
              className='cursor-pointer'>
-                <img src={Logo} alt="" className='w-10 md:w-7 inline' />
+                <img src={Logo} alt="" className='w-7 inline' />
                 <p className='hidden md:inline blackops md:text-2xl translate-x-1 ml-1'>
                     naija<span className='text-bice-blue'>g</span>ist
                 </p>
