@@ -10,9 +10,9 @@ const BlogComponent = ({name, profile_image, post_text, post_image}) => {
   const icons_style = 'border cursor-pointer p-3 md:px-5'
 
   return (
-    <div className='relative border p-3'>
+    <div className='relative border p-3 py-5'>
       {/* Post Header */}
-      <article className='flex gap-2 items-center'>
+      <article className='flex gap-2 items-center p-1'>
         <img 
             src={ profile_image } 
             className='rounded-full h-10 w-10 object-cover' alt="" 
