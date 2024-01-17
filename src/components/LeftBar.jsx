@@ -9,13 +9,15 @@ import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import { MdOutlineTopic } from 'react-icons/md'
 import { MdOutlinePrivacyTip } from 'react-icons/md'
+import Logo from '../data/images/new-logo.png'
+import { Link } from 'react-router-dom'
 import SidebarContext from '../data/context/SidebarContext'
 
 const LeftBar = () => {
 
   // sidebar context
   const { sidebar } = useContext(SidebarContext)
-  const leftComponentStyle = `${sidebar ? 'fixed w-11/12' : 'w-0'} md:fixed bg-white flex flex-col gap-10 md:w-1/5 py-5 md:py-10 overflow-auto border-2 transition-all z-20`
+  const leftComponentStyle = `${sidebar ? 'fixed w-9/12 top-0' : 'w-0'} md:fixed bg-white flex flex-col gap-10 md:w-1/5 py-5 md:py-10 overflow-auto border-2 transition-all z-20`
   const component_style = 'flex flex-col items-start pl-5 gap-5'
   const links_style = 'flex gap-2 items-center text-md cursor-pointer hover:underline'
 
@@ -23,6 +25,18 @@ const LeftBar = () => {
     <div
     className={leftComponentStyle}>
       <section className={component_style}>
+        {/* Logo */}
+        <article className='flex items-center mb-4'>
+            <Link
+             to='/'
+             className='cursor-pointer'>
+                <img src={Logo} alt="" className='w-7 inline' />
+                <p className='hidden md:inline blackops md:text-2xl translate-x-1 ml-1'>
+                    naija<span className='text-bice-blue'>g</span>ist
+                </p>
+            </Link>    
+        </article>
+
         <article className={links_style}>
           <AiOutlineHome />
           <p>Home</p>
