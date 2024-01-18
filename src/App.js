@@ -1,6 +1,5 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav';
 import { LoginProvider } from './data/context/LoginContext';
 import { SidebarProvider } from './data/context/SidebarContext';
 import Login from './pages/Login';
@@ -33,11 +32,11 @@ function App() {
             <Route element={<Layout /> }>
               <Route path='/' element={ <HomePage /> } />
               <Route path='/profile' element={ <Profile /> } />
-              <Route path='/chat' element={ <Chat /> } />
             </Route>
             <Route path='/login' element={ <Login /> } />
-            <Route path='/sign-up' element={ <SignUp /> } />
-            </Routes>
+            <Route path='/sign-up' element={<SignUp />} />
+            <Route path='/chat' element={ <Chat /> } />
+          </Routes>
         </LoginProvider>
       </SidebarProvider>
 
