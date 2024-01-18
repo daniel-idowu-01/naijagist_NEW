@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import HomePage from './pages/HomePage';
 import SignUp from './pages/SignUp';
+import Chat from './pages/Chat';
 import { FaArrowUp } from 'react-icons/fa'
 import Layout from './layout/Layout';
 
@@ -32,6 +33,7 @@ function App() {
             <Route element={<Layout /> }>
               <Route path='/' element={ <HomePage /> } />
               <Route path='/profile' element={ <Profile /> } />
+              <Route path='/chat' element={ <Chat /> } />
             </Route>
             <Route path='/login' element={ <Login /> } />
             <Route path='/sign-up' element={ <SignUp /> } />
