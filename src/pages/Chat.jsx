@@ -1,6 +1,7 @@
 import React from 'react'
 import MainUser from '../components/MainUser'
 import OtherUser from '../components/OtherUser'
+import Input from '../components/Input'
 
 const Chat = () => {
   return (
@@ -19,6 +20,10 @@ const Chat = () => {
           </div>
 
         </section>
+
+        <article className='w-1/2 mx-auto'>
+          <Input />
+        </article>
       </article>
       
     </section>
