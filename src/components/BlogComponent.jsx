@@ -5,7 +5,7 @@ import { TbShare3 } from 'react-icons/tb'
 
 
 
-const BlogComponent = ({name, profile_image, post_text, post_image}) => {
+const BlogComponent = ({ name, profile_image, post_text, post_image }) => {
 
   const icons_style = 'border cursor-pointer p-3 md:px-5'
 
