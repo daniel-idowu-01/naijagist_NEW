@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { FaArrowRight, FaAward } from 'react-icons/fa'
 
 const Input = () => {
 
@@ -74,7 +75,7 @@ const Input = () => {
             size={10}
         /> :
           <img src={CurvedArrow} alt="" className='' type='submit' />} */}
-        
+        <FaArrowRight className='text-white mx-auto' />
       </button>
 
     </form>
