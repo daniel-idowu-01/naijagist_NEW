@@ -17,7 +17,7 @@ const LeftBar = () => {
 
   // sidebar context
   const { sidebar } = useContext(SidebarContext)
-  const leftComponentStyle = `${sidebar ? 'fixed w-9/12 top-0' : 'w-0'} md:fixed bg-white flex flex-col gap-10 md:w-1/5 py-5 md:py-10 overflow-auto border-2 transition-all z-20`
+  const leftComponentStyle = `${sidebar ? 'fixed w-9/12 top-0' : 'w-0'} md:fixed bg-white flex flex-col gap-10 md:w-1/5 py-5 md:py-10 overflow-auto transition-all z-20`
   const component_style = 'flex flex-col items-start pl-5 gap-5'
   const links_style = 'flex gap-2 items-center text-md cursor-pointer hover:underline'
 
@@ -31,9 +31,6 @@ const LeftBar = () => {
              to='/'
              className='cursor-pointer'>
                 <img src={Logo} alt="" className='w-7 inline' />
-                <p className='hidden md:inline blackops md:text-2xl translate-x-1 ml-1'>
-                    naija<span className='text-bice-blue'>g</span>ist
-                </p>
             </Link>    
         </article>
 
@@ -51,7 +48,7 @@ const LeftBar = () => {
       <hr />
 
       {/* Topics */}
-      <section className={component_style}>
+      {/* <section className={component_style}>
         <p className='underline text-black text-opacity-50'>Topics</p>
         <article className={links_style}>
           <MdSportsSoccer />
@@ -74,7 +71,7 @@ const LeftBar = () => {
         </article>
       </section>
 
-      <hr />
+      <hr /> */}
 
       {/* Resources */}
       <section className={component_style}>

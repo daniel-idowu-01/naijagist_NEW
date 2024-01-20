@@ -7,6 +7,7 @@ import { FaArrowLeft } from 'react-icons/fa'
 const Chat = () => {
   return (
     <section>
+      {/* nav content */}
       <nav className='relative flex items-center gap-1 px-5 md:px-10 py-5 mx-auto md:w-[95%] border'>
         <FaArrowLeft />
         <div>
@@ -21,6 +22,7 @@ const Chat = () => {
         </div>
       </nav>
 
+      {/* chat body */}
       <body
         className='relative md:left-[5%] h-screen md:w-[95%] bg-background px-5 md:px-10 py-5 pb-40'
       >
